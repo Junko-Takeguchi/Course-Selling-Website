@@ -5,6 +5,7 @@ import axios from "axios";
 import {useNavigate} from "react-router-dom";
 
 function UserSignin() {
+    localStorage.removeItem("token");
     const [username,setUserName] = useState("");
     const [password,setPassword] = useState("");
     const navigate = useNavigate();

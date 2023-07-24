@@ -18,7 +18,7 @@ function UserCourses() {
     return <div style={{display: "flex", flexWrap:"wrap"}}>
         <Navbar></Navbar>
         {courses.map((course)=>{
-            return <Grid item lg={3}><CourseCard course={course}></CourseCard></Grid>
+            return <Grid item lg={3}><CourseCard course={course} buttonText="Buy Course"></CourseCard></Grid>
         })}
     </div>
 }

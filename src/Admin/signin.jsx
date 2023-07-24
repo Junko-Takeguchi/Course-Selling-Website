@@ -4,6 +4,7 @@ import {useNavigate} from "react-router-dom";
 import Navbar from "./navbar.jsx";
 
 function Signin(){
+    localStorage.removeItem("token");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();

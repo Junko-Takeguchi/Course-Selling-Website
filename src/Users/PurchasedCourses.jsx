@@ -19,7 +19,7 @@ function PurchasedCourses() {
         <div style={{display: "flex", flexWrap:"wrap"}}>
             <Navbar></Navbar>
             {purchasedCourses.map((course)=>{
-                return <div>{course.title}</div>
+                return <Grid item lg={3}><CourseCard course={course} buttonText="Content"></CourseCard></Grid>
             })}
         </div>
     )

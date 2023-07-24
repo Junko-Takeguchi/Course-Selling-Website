@@ -1,7 +1,7 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-function CourseCard({ course }) {
+function CourseCard({ course, buttonText }) {
     const navigate = useNavigate();
     return (
         <Card style={{
@@ -30,7 +30,7 @@ function CourseCard({ course }) {
                         navigate("/users/course/" + course._id);
                     }}
                 >
-                    Buy Course
+                    {buttonText}
                 </Button>
             </CardActions>
         </Card>

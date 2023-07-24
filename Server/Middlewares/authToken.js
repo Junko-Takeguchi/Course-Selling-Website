@@ -1,5 +1,7 @@
 import jwt from 'jsonwebtoken';
-export const secret = "sdskfhouwgrguo2u1487tfeiqg*EQ&";
+import dotenv from 'dotenv';
+dotenv.config();
+export const secret = process.env.SECRET;
 export function verifyToken(req, res, next) {
     const token = req.headers.authorization.split(' ')[1];
     if(!token){
